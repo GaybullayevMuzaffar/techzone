@@ -1,0 +1,140 @@
+.checkout-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+}
+
+.checkout-modal {
+  width: 100%;
+  max-width: 520px;
+  padding: 30px;
+  border-radius: 22px;
+  background: #151521;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+}
+
+.checkout-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 28px;
+}
+
+.checkout-header span {
+  color: #9188ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.checkout-header h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.checkout-header p {
+  color: #999;
+  font-size: 14px;
+}
+
+.checkout-close {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: #292938;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.checkout-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkout-modal label {
+  color: #ddd;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.checkout-modal input,
+.checkout-modal textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #38384b;
+  border-radius: 10px;
+  outline: none;
+  background: #20202e;
+  color: white;
+  font: inherit;
+  resize: vertical;
+}
+
+.checkout-modal input:focus,
+.checkout-modal textarea:focus {
+  border-color: #8177ff;
+}
+
+.checkout-modal input::placeholder,
+.checkout-modal textarea::placeholder {
+  color: #777;
+}
+
+.checkout-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  margin-top: 8px;
+  border-top: 1px solid #38384b;
+}
+
+.checkout-summary strong {
+  color: #aaa4ff;
+  font-size: 20px;
+}
+
+.checkout-submit {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background: #7167f8;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.checkout-submit:hover {
+  background: #5e54e8;
+}
+
+.checkout-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+  .checkout-modal {
+    padding: 20px;
+  }
+
+  .checkout-header h2 {
+    font-size: 20px;
+  }
+}

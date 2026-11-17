@@ -1,0 +1,183 @@
+
+.orders-page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 30px 80px;
+  color: #f5f5f7;
+}
+
+.orders-heading {
+  margin-bottom: 38px;
+}
+
+.orders-heading > span {
+  color: #888;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.orders-heading h1 {
+  font-size: 36px;
+  letter-spacing: -1.5px;
+  margin: 12px 0;
+}
+
+.orders-heading p {
+  color: #999;
+  font-size: 14px;
+}
+
+.orders-message {
+  padding: 60px 20px;
+  text-align: center;
+  color: #aaa;
+}
+
+.orders-empty {
+  padding: 70px 20px;
+  text-align: center;
+  border: 1px solid #292929;
+  border-radius: 18px;
+  background: #151515;
+}
+
+.orders-empty > span {
+  font-size: 42px;
+}
+
+.orders-empty h2 {
+  margin: 18px 0 8px;
+  font-size: 21px;
+}
+
+.orders-empty p {
+  color: #999;
+  font-size: 14px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.order-card {
+  padding: 24px;
+  border: 1px solid #292929;
+  border-radius: 16px;
+  background: #151515;
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #292929;
+}
+
+.order-card-header > div > span {
+  color: #888;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.order-card-header h3 {
+  margin: 8px 0 0;
+  font-size: 22px;
+}
+
+.order-status {
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #292929;
+  color: #ddd;
+}
+
+.order-status.pending {
+  background: #493a1b;
+  color: #ffd36a;
+}
+
+.order-status.confirmed {
+  background: #183c2a;
+  color: #7ee2a8;
+}
+
+.order-status.shipped {
+  background: #19364c;
+  color: #8bcaff;
+}
+
+.order-status.delivered {
+  background: #183c2a;
+  color: #7ee2a8;
+}
+
+.order-status.cancelled {
+  background: #482323;
+  color: #ff9292;
+}
+
+.order-details {
+  display: grid;
+  gap: 9px;
+  padding: 18px 0;
+}
+
+.order-details p {
+  margin: 0;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.order-details strong {
+  color: #eee;
+}
+
+.order-products {
+  padding-top: 15px;
+  border-top: 1px solid #292929;
+}
+
+.order-product {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 9px 0;
+  color: #bbb;
+  font-size: 13px;
+}
+
+.order-product span:last-child {
+  text-align: right;
+  color: #eee;
+}
+
+@media (max-width: 600px) {
+  .orders-page {
+    padding: 30px 16px 60px;
+  }
+
+  .orders-heading h1 {
+    font-size: 29px;
+  }
+
+  .order-card {
+    padding: 17px;
+  }
+
+  .order-card-header h3 {
+    font-size: 18px;
+  }
+
+  .order-product {
+    font-size: 12px;
+  }
+}
